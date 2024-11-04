@@ -1,0 +1,54 @@
+#header{
+  
+  width: 100%;
+}
+#header #header.gnb{
+  
+}
+#header .wrap{
+  width: 1680px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+#header .wrap ul{
+  
+  display: flex;
+}
+#header .wrap ul li{
+  
+}
+#header .wrap ul li a{
+  
+  padding: 30px 20px;
+  margin: 0 30px;
+  color: #008080;
+  /*! color: #222; */
+}
+#header .wrap a{
+  
+}
+#header .wrap .logo{
+  display: block;
+  content: "";
+  width: 90px;
+  height: 100px;
+  background: url(../img/gif/logo.gif) no-repeat center;
+  background-size: contain;
+}
+
+#header .lang{
+
+}
+#header .lang ul{
+
+}
+#header .lang ul li{
+
+}
+#header .lang ul li a{
+
+}
