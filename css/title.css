@@ -2,40 +2,42 @@
   height: 720px;
 }
 #title .wrap{
-  
   width: auto;
   height: 100%;
+  padding: 0 0 50px 0;
 }
-#title .wrap ul{
+#title .wrap > ul{
   height: 100%;
   overflow: hidden;
 }
-#title .wrap ul li{
+#title .wrap > ul slick-prev slick-arrow, #title .wrap > ul slick-next slick-arrow{
+  position: absolute;
+}
+#title .wrap > ul slick-prev slick-arrow{
   
 }
-#title .wrap ul li:nth-child(1){
+#title .wrap > ul slick-next slick-arrow{
+  
+}
+#title .wrap > ul div{
+  height: 100%;
+}
+#title .wrap > ul li.title{
+  padding: 0 calc((100vw - 17px - 1280px) / 2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+#title .wrap ul li.tbg-01{
   background: url(../img/png/bg-title-01.png) center no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 calc((100% - 1280px) / 2);
 }
-#title .wrap ul li:nth-child(2){
+#title .wrap ul li.tbg-02{
   background: url(../img/png/bg-title-02.png) center no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 calc((100% - 1280px) / 2);
 }
-#title .wrap ul li:nth-child(3){
+#title .wrap ul li.tbg-03{
   background: url(../img/png/bg-title-03.png) center no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 calc((100% - 1280px) / 2);
 }
 #title .wrap ul li a{
   

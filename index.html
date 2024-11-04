@@ -19,18 +19,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- JS & jQuery -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Slick -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Script -->
     <script>
         $(document).ready(function(){
-            $('.titleAni').slick({
-                dots: true,
+        // title-Slick
+            $('.title-ani').slick({
                 infinite: true,
-                speed: 300,
                 slidesToShow: 1,
-                adaptiveHeight: true
+                slidesToScroll: 1,
+                dots:true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 1000,
+                fade: false
             });
         });
     </script>
@@ -67,18 +74,18 @@
 <!-- title -->
     <div id="title">
         <div class="wrap">
-            <ul class="titleAni">
-                <li>
+            <ul class="title-ani">
+                <li class="title tbg-01">
                     <a href=""></a>
-                    <p></p>
+                    <h3></h3>
                 </li>
-                <li>
+                <li class="title tbg-02">
                     <a href=""></a>
-                    <p></p>
+                    <h3></h3>
                 </li>
-                <li>
+                <li class="title tbg-03">
                     <a href=""></a>
-                    <p></p>
+                    <h3></h3>
                 </li>
             </ul>
         </div>
@@ -86,7 +93,49 @@
 
 <!-- main -->
     <main>
-
+        <section id="menu-list">
+            <div class="wrap">
+                <h2 class="hide">메뉴 이것저것</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <figure>사진1</figure>
+                            <h3>신메뉴</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>사진2</figure>
+                            <h3>커피</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>사진3</figure>
+                            <h3>음료&차</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>사진4</figure>
+                            <h3>디저트</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>사진5</figure>
+                            <h3>MD상품</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>사진6</figure>
+                            <h3>Other</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
 <!-- footer -->
